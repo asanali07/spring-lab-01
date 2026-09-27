@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-lab-03
+
+server:
+  port: 8080
+
+app:
+  owner: "Askaruly Asanali"
+  group: "IT1-2409IS"
+
+  mail:
+    enabled: true
+    retry-count: 3
+    from: "noreply@iitu.kz"
+
+  security:
+    token-ttl: 30m
+    min-password-length: 8
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions
